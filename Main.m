@@ -40,7 +40,7 @@ Elemtable = [1 1 3;
              22 11 13;
              23 12 13]
 
-%            Elem x1 y1 x2 y2 Em L
+%            Elem x1 y1 x2 y2 Em A
 ElemProps = [1 100 1;
              2 100 1;
              3 100 1;
