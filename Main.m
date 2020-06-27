@@ -76,7 +76,7 @@ end
 
          
 BC = [2 17 18]
-f = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]'
+f = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0]'
 
 
 nodeArray = size(NodeTable);
@@ -86,6 +86,6 @@ Kmod = ModifiedMasterStiffnessForDBC(BC, K)
 fmod = ModifiedMasterForcesForDBC(BC, f)
 u = Kmod\fmod
 f = K*u
-p = IntForcesOfExampleTruss(u)
+p = IntForces(u, Elemtable, ElemProps, NodeTable)
 
 
