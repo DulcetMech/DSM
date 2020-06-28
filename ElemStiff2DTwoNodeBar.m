@@ -6,6 +6,9 @@ dy = y2 - y1;
 L = sqrt(dx^2+dy^2);
 c = dx/L;
 s = dy/L;
-Ke=(Em*A/L)* [ c^2, c*s, -c^2, -c*s;  c*s, s^2,-s*c,-s^2; -c^2,-s*c, c^2, s*c; -s*c,-s^2, s*c, s^2];
+Ke=(Em*A/L)* [ c^2,  c*s, -c^2, -c*s;  
+               c*s,  s^2, -s*c, -s^2; 
+              -c^2, -s*c,  c^2,  s*c; 
+              -s*c, -s^2,  s*c,  s^2];
 end
 
